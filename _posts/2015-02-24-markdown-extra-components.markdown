@@ -4,7 +4,8 @@ layout: post
 date: 2020-07-10 12:12
 image: /assets/images/markdown.jpg
 headerImage: false
-category: blog
+projects: true
+category: project
 author: Remykusters
 description: DeepMoD
 ---
@@ -16,6 +17,14 @@ DeepMoD is a Deep learning based Model Discovery algorithm. DeepMoD discovers th
 This tool has been released as package in both Tensorflow and Pytorch. Note that all the further developmement happens on the  <a href="https://github.com/PhIMaL/DeePyMoD_torch">Pytorch version</a> and that the  <a href="https://github.com/PhIMaL/DeePyMoD">Tensorflow version</a>  is not further maintained. 
 
 The paper is available on <a href="https://arxiv.org/abs/1904.09406">arXiv</a>
+
+
+
+[Markdowm Image][/image/url]
+
+```raw
+![Markdowm Image][/image/url]
+```
 
 ---
 

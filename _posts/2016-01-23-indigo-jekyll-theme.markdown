@@ -1,21 +1,25 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "Model discovery for single particle tracking"
 layout: post
-date: 2016-01-23 22:10
-tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
-headerImage: true
+date: 2020-07-05 12:12
+image: /assets/images/markdown.jpg
+headerImage: false
 projects: true
-hidden: true # don't count this post in blog pagination
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
 category: project
-author: johndoe
-externalLink: false
+author: Remykusters
+description: DeepMoD
+
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+## Summary:
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+DeepMoD is a Deep learning based Model Discovery algorithm. DeepMoD discovers the partial differential equation underlying a spatio-temporal data set using sparse regression on a library of possible functions and their derivatives. A neural network approximates the data and constructs the function library, but it also performs the sparse regression.
+
+This tool has been released as package in both Tensorflow and Pytorch. Note that all the further developmement happens on the  <a href="https://github.com/PhIMaL/DeePyMoD_torch">Pytorch version</a> and that the  <a href="https://github.com/PhIMaL/DeePyMoD">Tensorflow version</a>  is not further maintained. 
+
+The paper is available on <a href="https://arxiv.org/abs/1904.09406">arXiv</a>
+
+
 
 ---
 
