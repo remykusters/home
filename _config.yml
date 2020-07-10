@@ -13,8 +13,8 @@ picture: assets/images/remy.jpeg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: https://remykusters.github.io/home/assets/CV2020.pdf
+resume-external: false
+resume-url: assets/CV_2020.pdf
 
 url: https://remykusters.github.io/home
 # your url: https://USERNAME.github.io
@@ -53,7 +53,7 @@ github: remykusters
 #email: myemail@gmail.com
 
 authors:
-  johndoe:
+  remykusters:
     name: Remy Kusters
     bio:  Research fellow and junior group leader at the Center for Research and Interdisciplinarity (CRI) at Paris
     external-image: false
@@ -80,7 +80,7 @@ about: true
 blog: true
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
 show-tags: true
