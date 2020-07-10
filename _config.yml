@@ -14,7 +14,7 @@ picture: assets/images/remy.jpeg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://remykusters.github.io/home/assets/CV2020.pdf
 
 url: https://remykusters.github.io/home
 # your url: https://USERNAME.github.io
@@ -57,7 +57,7 @@ authors:
     name: Remy Kusters
     bio:  Research fellow and junior group leader at the Center for Research and Interdisciplinarity (CRI) at Paris
     external-image: false
-    picture: assets/images/remy.jpg
+    picture: assets/images/remy.jpeg
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
