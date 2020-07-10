@@ -1,12 +1,12 @@
 ---
-title: "DeepMod"
+title: "DeepMoD"
 layout: post
 date: 2020-07-10 12:12
 image: /assets/images/markdown.jpg
 headerImage: false
 category: blog
 author: Remykusters
-description: Markdown summary with different options
+description: DeepMoD
 ---
 
 ## Summary:
@@ -179,10 +179,11 @@ Do you want some videos? Youtube, Vimeo or Vevo? Copy the embed code and paste o
 **Example**
 
 {% highlight html %}
-<iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ml4EXS_MUBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {% endhighlight %}
 
-<iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ml4EXS_MUBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [1]: https://daringfireball.net/projects/markdown/
 [2]: https://www.fileformat.info/info/unicode/char/2163/index.htm
