@@ -1,6 +1,6 @@
 # main text of home
 name: Remy Kusters
-bio: Research fellow and junior group leader at the Center for Research and Interdisciplinarity (CRI) at Paris
+bio: Research fellow and junior group leader at the <li><a href="https://research.cri-paris.org/">Center for Research and Interdisciplinarity</a></li> (CRI)
 
 # twitter summary info
 description: A blog about machine learning, physics and more
