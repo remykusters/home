@@ -1,21 +1,17 @@
 ---
-title: "Markdown Extra Components"
+title: "DeepMod"
 layout: post
-date: 2016-02-24 22:48
+date: 2020-07-10 12:12
 image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- markdown
-- components
-- extra
 category: blog
-author: jamesfoster
+author: Remykusters
 description: Markdown summary with different options
 ---
 
 ## Summary:
 
-You can pick as item to see how to apply in markdown.
+DeepMoD is a Deep learning based Model Discovery algorithm. DeepMoD discovers the partial differential equation underlying a spatio-temporal data set using sparse regression on a library of possible functions and their derivatives. A neural network approximates the data and constructs the function library, but it also performs the sparse regression.
 
 #### Especial Elements
 - [Evidence](#evidence)
