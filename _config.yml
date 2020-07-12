@@ -12,9 +12,9 @@ picture: assets/images/remy.jpeg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: false
-resume-url: assets/CV_2020.pdf
+#resume: true
+#resume-external: false
+#resume-url: assets/CV_2020.pdf
 
 url: https://remykusters.github.io/home
 # your url: https://USERNAME.github.io
