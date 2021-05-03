@@ -1,0 +1,35 @@
+---
+title: "Model discovery in the sparse sampling regime"
+layout: post
+date: 2021-05-2 11:52
+image: /assets/images/markdown.jpg
+headerImage: false
+projects: true
+category: project
+author: Remykusters
+description: Model discovery in the sparse sampling regime
+---
+
+<em> (This worked is published as a workshop papar at the ICLR workshop: AI: Modeling Oceans and Climate Change) <em>
+
+To predict and model complex dynamic systems, such as ocean dynamics and weather predictions,one oftentimes  deals with coarsely and off-grid sampled observations. In this work we investigate how a (neural network) NN-based model discovery framework such as DeepMoD allows for accurate model discovery of partial differential equations when the spacing between sensors is large and the samples are not placed on a grid. 
+
+To recap, DeepMoD discovers the partial differential equation underlying a spatio-temporal data set using sparse regression on a library of candidate functions and their derivatives. The physics informed neural network interpolation and automatic differentiation that are central to DeepMoD allow to better fit the data and its spatiotemporal derivatives. In this work we compare this NN-based approach with classic spline interpolation and numerical differentiation techniques. We show that NN-based model discovery allow the discovery of the underlying equations, even when sensors are placed further apart than the data’s characteristic length scale and in the presence of high noise levels. 
+
+In this post, I examplify this by comparing random sampling and grid based sampling for both NN-based and classical interpolation techniques. In the paper, we illustrate this further on both synthetic and experimental data sets such as (non)-linear advection, reaction and diffusion.
+
+The take home message of the paper is essentially that neural network based methods do not inherently require a grid to interpolate the data. This allows to modify the sampling strategy over time and recover a more accurate spatio-temporal interpolation. To illustrate this, we calculate the error in the model discovery task of the Burgers equation, 
+
+$$u_t(x,t) =  \nu u_{xx} - u u_x,$$
+
+where $\nu$ is the viscosity and $u$ the observed field. For any details on the algorithm and data generation, check out the paper. We sample the solution, $u(x,t)$ in two different ways: 1) We place sensors on a predefined grid with spacing $\Delta x$ and 2) we reposition the sensors randomely over time. 
+
+<img src="{{site.baseurl}}/assets/images/sampling_ref.png">
+
+We then perform model discovery on these data sets and calculate the error in the model discovery task + whether  the correct equation is recovered (circles vs. triangles in the figure below). The results are shown for noise-less data and data with 20% white noise added to the data:
+
+<img src="{{site.baseurl}}/assets/images/sampling_overview.png">
+
+The essential take home message of this figure is twofold. First, random sampling considerably outperforms grid based sampling (lower error and more succesfull model discovery). The reason for this is that, by randomely shifting the positions of the sensors over time, more of the spatiotemporal domain is sampled and hence the interpolation task is considerably improved. Note that for classical interpolation schemes, interpolating through space and time at the same time cannot straightforwardly be done. The second point is that, NN-based interpolation is barely impacted by noise that is present in the data, i.e., the errors obtained are fairly independent of the noise level. 
+
+Taken together, we showed in this paper how a deep learning approach allows to discover PDEs from coarsely and off-grid sampled observations in time and space. The correct equations are discovered, even when the sensor spacing is larger than some data set’s characteristic length scale, an inaccessible regime when using numerical differentiation procedures. We have also shown that the presence of noise quickly deteriorates the performance of classical methods, whereas the neural network based method is much less affected. 
